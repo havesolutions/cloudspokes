@@ -1,13 +1,13 @@
 Cloudspokes::Application.routes.draw do
 
-	resources :contents
-	root :to => "contents#index"
-	match 'faq' => 'contents#faq'
-	match 'about' => 'contents#about'
-	match 'privacy' => 'contents#privacy'
-	match 'tos' => 'contents#tos'
+	resources :content
+	root :to => "content#index"
+	match 'faq' => 'content#faq'
+	match 'about' => 'content#about'
+	match 'privacy' => 'content#privacy'
+	match 'tos' => 'content#tos'
 
-	
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -65,3 +65,4 @@ Cloudspokes::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
+

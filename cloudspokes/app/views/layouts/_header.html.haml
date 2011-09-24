@@ -3,7 +3,7 @@
 
   #navigation.fl
     #logo2
-    %div{:style => "clear: both"}
+    %div{:style => "clear: both"} &nbsp;
     %ul
       %li
         %a#ctl00_hypMembers{:href => "http://www.cloudspokes.com/members.html"}
@@ -20,7 +20,7 @@
 
   #utility-nav.fr
     %ul
-      %li= link_to "how it works", "http://www.cloudspokes.com/howitworks.html"
+      %li= link_to "how it works", about_path
       %li= link_to "blog", "http://blog.cloudspokes.com/"
       %li= link_to "faq", faq_path
       %li#ctl00_liLogin
@@ -66,13 +66,11 @@
         %ul
           %li.google
             %a#ctl00_uc_google1_lnkGoogleLogin{:href => "javascript:__doPostBack('ctl00$uc_google1$lnkGoogleLogin','')"} Google
-          %script{:src => "http://connect.facebook.net/en_US/all.js", :type => "text/javascript"}
           #fb-root.fb_reset
             %div{:style => "position: absolute; top: -10000px; height: 0pt; width: 0pt;"}
           %li.facebook
             %a{:onclick => "fb_login()"} Facebook
           :javascript
-            FB.init({ appId: '178641412172485', status: true, cookie: true, xfbml: true });
 
             function fb_login() {
 
@@ -484,7 +482,7 @@
         %ul
           %li.google
             %a#ctl00_uc_google2_lnkGoogleLogin{:href => "javascript:__doPostBack('ctl00$uc_google2$lnkGoogleLogin','')"} Google
-          %script{:src => "http://connect.facebook.net/en_US/all.js", :type => "text/javascript"}
+          /%script{:src => "http://connect.facebook.net/en_US/all.js", :type => "text/javascript"}
           #fb-root
           %li.facebook
             %a{:onclick => "fb_login()"} Facebook

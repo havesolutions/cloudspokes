@@ -1,4 +1,4 @@
-class ContentsController < ApplicationController
+class ContentController < ApplicationController
 	def index
 	end
 
@@ -14,3 +14,4 @@ class ContentsController < ApplicationController
 	def tos
 	end
 end
+

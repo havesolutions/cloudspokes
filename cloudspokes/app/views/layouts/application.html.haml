@@ -3,9 +3,9 @@
   %head
     %title Cloudspokes
     = stylesheet_link_tag    "application"
-    = javascript_include_tag "application"
+    = javascript_include_tag "AmasisMTStd-Black.font", "application", "cufon-yui", "facebox", "jquery-fns", "jquery-ui-1.8.9.custom.min", "Melbourne.font"
     = csrf_meta_tags
-  %body
+  %body#mainBdy
     .form
       .shell
         = render "layouts/header"
