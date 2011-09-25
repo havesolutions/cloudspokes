@@ -1,0 +1,195 @@
+#form
+  #ctl00_dvErrMsg{:style => "font-weight: bold;"}
+  %span#ctl00_Body_lblMessage{:style => "color:Red;"}
+  #content
+    / Dashboard
+    #dashboard
+      / Transparent Box
+      .trans-box
+        .box-t.notext
+          \ 
+        .box-cnt
+          %h2.melbourne
+            %cufon.cufon.cufon-canvas{:alt => "Join ", :style => "width: 117px; height: 70px;"}
+              %canvas{:height => "76", :style => "width: 157px; height: 76px; top: -8px; left: -2px;", :width => "157"}
+              %cufontext Join
+            %cufon.cufon.cufon-canvas{:alt => "Us", :style => "width: 66px; height: 70px;"}
+              %canvas{:height => "76", :style => "width: 91px; height: 76px; top: -8px; left: -2px;", :width => "91"}
+              %cufontext Us
+          %p
+            Participate in challenges, build a diverse portfolio, learn something new, and earn
+            a little cash money on the side too.
+          %a#ctl00_Body_hypJoinNow.button-blue{:href => "challenges.html"} Challenges
+          %a.button-grey{:href => "howitworks.html"} Learn More
+          .cl
+            \ 
+        .box-b.notext
+          \ 
+      / END Transparent Box
+      / Pinned Info
+      .pinned-info
+        .label.label-1.label-red
+          %a{:href => "members.html", :style => "text-decoration: none"}
+            %span.pin.notext  
+            %strong
+              %span#ctl00_Body_lblTotalNo 21,062
+            %small members
+        .label.label-2.label-blue
+          %a{:href => "challenges.html", :style => "text-decoration: none"}
+            %span.pin.notext  
+            %strong
+              %span#ctl00_Body_lblOpenChallenge 5
+            %small open challenges
+        .label.label-3.label-green
+          %a{:href => "challenges.html?sort=startdate&sortasc=false&filter=closed&type=all", :style => "text-decoration: none"}
+            %span.pin.notext  
+            %strong
+              %span#ctl00_Body_lblChallengeCompleted 74
+            %small
+              challenges
+              won
+        .label.label-4.label-blue
+          %a{:href => "challenges.html", :style => "text-decoration: none"}
+            %span.pin.notext  
+            %strong
+              %span#ctl00_Body_lblUpForGrabs $6,350
+            %small
+              up for grabs
+              now
+        .label.label-5.label-white
+          %a{:href => "challenges.html?sort=startdate&sortasc=false&filter=closed&type=all", :style => "text-decoration: none"}
+            %span.pin.notext  
+            %strong
+              %span#ctl00_Body_lblEntrieSubmitted 385
+            %small
+              entries
+              submitted
+        .label.label-6.label-yellow
+          %a{:href => "challenges.html?sort=startdate&sortasc=false&filter=closed&type=all", :style => "text-decoration: none"}
+            %span.pin.notext  
+            %strong
+              %span#ctl00_Body_lblRewards $205,550
+            %small pending and paid
+      / END Pinned Info
+      / Featured Challenge
+      #featured-challenge
+        %h3.melbourne
+          %cufon.cufon.cufon-canvas{:alt => "Featured ", :style => "width: 70px; height: 20px;"}
+            %canvas{:height => "22", :style => "width: 81px; height: 22px; top: -2px; left: -1px;", :width => "81"}
+            %cufontext Featured
+          %cufon.cufon.cufon-canvas{:alt => "Challenge", :style => "width: 77px; height: 20px;"}
+            %canvas{:height => "22", :style => "width: 83px; height: 22px; top: -2px; left: -1px;", :width => "83"}
+            %cufontext Challenge
+        .info.fl
+          %p
+            %strong
+              %span#ctl00_Body_lblFeaturedContest Field Level Security Extractor for Salesforce.com
+            = succeed "..." do
+              %span#ctl00_Body_lblFeaturedContestDescription Export field accessibility for all objects, profiles and recordtypes t
+        .prize-info.fr
+          %span.prize
+            %span#ctl00_Body_lblFeaturedContestPrize $1500
+          %a#ctl00_Body_lnkFeaturedContestDetail{:href => "challenge_detail.html?contestId=300"} See Details »
+      / END Featured Challenge
+    / END Dashboard
+    / Columns
+    .columns
+      .cl
+        \ 
+      .column
+        %h3
+          Featured Member
+        .box
+          .box-b
+            .box-t
+              .featured-member
+                .member-box
+                  .member-b
+                    .member-t
+                      %a#ctl00_Body_lnkFeaturedPic.member-pic{:href => "profile.html?username=mbleigh"}
+                        %img#ctl00_Body_imgFeatured{:src => "http://cloudspokes.s3.amazonaws.com/Cloud_th_100.jpg", :style => "height:33px;width:48px;border-width:0px;"}/
+                      .user-info
+                        %span.counter.fr
+                          %a#ctl00_Body_lnkLeaderPts{:href => "profile.html?username=mbleigh"} $5600
+                        %h4
+                          %a#ctl00_Body_featuredMemberLnk{:href => "profile.html?username=mbleigh"} mbleigh
+                        \ 
+                        %span#ctl00_Body_spWins.stats
+                          Challenge Wins:
+                          %span#ctl00_Body_lblWins 4
+                      .cl
+                        \ 
+                %p.intro
+                  %span#ctl00_Body_lblShortBio
+      .column.column-middle
+        %h3
+          Leaderboard
+        .box
+          .box-b
+            .box-t
+              .leaders
+                %ul
+                  %li
+                    %span#ctl00_Body_listOfScoreboard_ctrl0_spMedal.num.num-gold
+                      %cufon.cufon.cufon-canvas{:alt => "1", :style => "width: 8px; height: 16px;"}
+                        %canvas{:height => "21", :style => "width: 19px; height: 21px; top: -3px; left: -1px;", :width => "19"}
+                        %cufontext 1
+                    .user-box.fl
+                      .box-b
+                        .box-t
+                          %a{:href => "profile.html?username=Kenji776"}
+                            %img{:alt => "Kenji776", :complete => "complete", :height => "30", :src => "https://acdcstorage.blob.core.windows.net/userimages/profilekenji776038c1f86-598e-4488-a13d-02ff065ebe17_th_100.jpg", :width => "30"}
+                          .user-info
+                            %span.counter.fr $13150
+                            %h4
+                              %a{:href => "profile.html?username=Kenji776"}
+                                Kenji776
+                            %span.stats
+                              United States
+                          .cl
+                            \ 
+                  %li
+                    %span#ctl00_Body_listOfScoreboard_ctrl1_spMedal.num.num-silver
+                      %cufon.cufon.cufon-canvas{:alt => "2", :style => "width: 8px; height: 16px;"}
+                        %canvas{:height => "21", :style => "width: 19px; height: 21px; top: -3px; left: -1px;", :width => "19"}
+                        %cufontext 2
+                    .user-box.fl
+                      .box-b
+                        .box-t
+                          %a{:href => "profile.html?username=romin"}
+                            %img{:alt => "romin", :complete => "complete", :height => "30", :src => "https://acdcstorage.blob.core.windows.net/userimages/profilerominb17438f3-a397-4e10-bd57-5df624b35143_th_100.jpg", :width => "30"}
+                          .user-info
+                            %span.counter.fr $10100
+                            %h4
+                              %a{:href => "profile.html?username=romin"}
+                                romin
+                            %span.stats
+                              India
+                          .cl
+                            \ 
+                  %li
+                    %span#ctl00_Body_listOfScoreboard_ctrl2_spMedal.num.num-bronze
+                      %cufon.cufon.cufon-canvas{:alt => "3", :style => "width: 8px; height: 16px;"}
+                        %canvas{:height => "21", :style => "width: 19px; height: 21px; top: -3px; left: -1px;", :width => "19"}
+                        %cufontext 3
+                    .user-box.fl
+                      .box-b
+                        .box-t
+                          %a{:href => "profile.html?username=mbleigh"}
+                            %img{:alt => "mbleigh", :complete => "complete", :height => "30", :src => "http://cloudspokes.s3.amazonaws.com/Cloud_th_50.jpg", :width => "30"}
+                          .user-info
+                            %span.counter.fr $5600
+                            %h4
+                              %a{:href => "profile.html?username=mbleigh"}
+                                mbleigh
+                            %span.stats
+                              United States
+                          .cl
+                            \ 
+      .column
+        %iframe{:frameborder => "0", :height => "250", :src => "http://www.youtube.com/embed/abMDBbxpsGo?rel=0", :width => "300"}
+      .cl
+        \ 
+    / END Columns
+  / END Content
+  #ctl00_Body_dvAdWords

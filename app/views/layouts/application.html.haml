@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Cloudspokes
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "AmasisMTStd-Black.font", "application", "cufon-yui", "facebox", "jquery-1.4.4.min", "jquery-fns", "jquery-ui-1.8.9.custom.min", "Melbourne.font" 
+    = csrf_meta_tags
+  %body
+    .form
+      .shell
+        = render "layouts/header"
+        .form
+          = yield
+        = render "layouts/footer"
+
